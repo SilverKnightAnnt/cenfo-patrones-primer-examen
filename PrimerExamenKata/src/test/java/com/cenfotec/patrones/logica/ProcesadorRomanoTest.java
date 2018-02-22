@@ -32,6 +32,20 @@ public class ProcesadorRomanoTest {
 		}
 		assertEquals(true, pass);	
 		
-	}	
+	}
+	@Test
+	public void validarString() {
+		ProcesadorRomano miProce = new ProcesadorRomano();
+		boolean pass = false;
+		try {	
+			assertEquals(0, miProce.Convierte("LL"));					
+			assertEquals(0, miProce.Convierte("DD"));
+			assertEquals(0, miProce.Convierte("XXXX"));
+			assertEquals(0, miProce.Convierte("CCCC"));
+			} catch(Exception e){
+				pass = true;
+			}
+			assertEquals(true, pass);
+	}
 	
 }
