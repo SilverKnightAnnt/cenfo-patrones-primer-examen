@@ -37,7 +37,8 @@ public class ProcesadorRomanoTest {
 	public void validarString() {
 		ProcesadorRomano miProce = new ProcesadorRomano();
 		boolean pass = false;
-		try {	
+		try {
+			assertEquals(0, miProce.Convierte("IIII"));
 			assertEquals(0, miProce.Convierte("LL"));					
 			assertEquals(0, miProce.Convierte("DD"));
 			assertEquals(0, miProce.Convierte("XXXX"));

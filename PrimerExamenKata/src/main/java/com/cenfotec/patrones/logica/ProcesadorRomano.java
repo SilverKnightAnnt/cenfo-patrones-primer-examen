@@ -4,6 +4,7 @@ public class ProcesadorRomano {
 
 	
 	public int Convierte(String letraRomana) throws Exception {		
+				
 		
 		int numeroRomano = 0;
 		
@@ -19,9 +20,7 @@ public class ProcesadorRomano {
 			break;
 		case "III":
 			numeroRomano = 3;
-			break;
-		case "IIII":
-			throw new Exception("Error");
+			break;		
 		case "V":
 			numeroRomano = 5;
 			break;
@@ -40,8 +39,12 @@ public class ProcesadorRomano {
 		case "M":
 			numeroRomano = 1000;
 			break;
+		default:
+			throw new Exception("Error");
+			
 		}				
 				
 		return numeroRomano;
-	}
+	}	
+	
 }
