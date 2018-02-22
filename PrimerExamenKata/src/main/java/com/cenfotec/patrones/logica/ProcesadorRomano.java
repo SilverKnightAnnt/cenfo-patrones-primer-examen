@@ -3,13 +3,13 @@ package com.cenfotec.patrones.logica;
 public class ProcesadorRomano {
 
 	
-	public int Convierte(String numero) {
+	public int Convierte(String letraRomana) {
 		
-		int i = 0;
-		if (numero == "") {
-			i = 0;
+		int numeroRomano = 0;
+		if (letraRomana == "") {
+			numeroRomano = 0;
 		}
 		
-		return i;
+		return numeroRomano;
 	}
 }
