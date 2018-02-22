@@ -7,30 +7,40 @@ public class ProcesadorRomano {
 		
 		int numeroRomano = 0;
 		
-			if (letraRomana == "") {
-				numeroRomano = 0;
-			}else if(letraRomana == "I"){
-				numeroRomano = 1;
-			}else if(letraRomana == "II"){
-				numeroRomano = 2;
-			}else if(letraRomana == "III"){
-				numeroRomano = 3;
-			}else if(letraRomana == "IIII"){
-				throw new Exception("Error");
-			}else if(letraRomana == "V"){
-				numeroRomano = 5;
-			}else if(letraRomana == "X"){
-				numeroRomano = 10;
-			}else if(letraRomana == "L"){
-				numeroRomano = 50;
-			}else if(letraRomana == "C"){
-				numeroRomano = 100;
-			}else if(letraRomana == "D"){
-				numeroRomano = 500;
-			}else if(letraRomana == "M"){
-				numeroRomano = 1000;
-			}
-		
+		switch(letraRomana) {
+		case "":
+			numeroRomano = 0;
+			break;
+		case "I":
+			numeroRomano = 1;
+			break;
+		case "II":
+			numeroRomano = 2;
+			break;
+		case "III":
+			numeroRomano = 3;
+			break;
+		case "IIII":
+			throw new Exception("Error");
+		case "V":
+			numeroRomano = 5;
+			break;
+		case "X":
+			numeroRomano = 10;
+			break;
+		case "L":
+			numeroRomano = 50;
+			break;
+		case "C":
+			numeroRomano = 100;
+			break;
+		case "D":
+			numeroRomano = 500;
+			break;
+		case "M":
+			numeroRomano = 1000;
+			break;
+		}				
 				
 		return numeroRomano;
 	}

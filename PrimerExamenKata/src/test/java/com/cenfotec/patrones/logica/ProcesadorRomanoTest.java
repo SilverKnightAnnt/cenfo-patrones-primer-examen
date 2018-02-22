@@ -32,6 +32,6 @@ public class ProcesadorRomanoTest {
 		}
 		assertEquals(true, pass);	
 		
-	}
+	}	
 	
 }
