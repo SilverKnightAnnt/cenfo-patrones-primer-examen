@@ -19,6 +19,12 @@ public class ProcesadorRomanoTest {
 		assertEquals(2, miProce.Convierte("II"));
 		assertEquals(3, miProce.Convierte("III"));
 		assertEquals("Error", miProce.Convierte("IIII"));
+		assertEquals(5, miProce.Convierte("V"));
+		assertEquals(10, miProce.Convierte("X"));
+		assertEquals(50, miProce.Convierte("L"));
+		assertEquals(100, miProce.Convierte("C"));
+		assertEquals(500, miProce.Convierte("D"));
+		assertEquals(1000, miProce.Convierte("M"));
 	}
 	
 }
